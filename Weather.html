@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Realtime Weather</title>
+    <link rel="stylesheet" href="Weather.css">
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+    <div class="effectcard">
+        <div class="maindiv">
+            <h1 class="title">Weather Application</h1>
+            <form class="formsubmit">
+                <div class="subdiv">
+                    <input type="text" class="input" placeholder="Enter a city">
+                    <button type="submit">Get Weather</button>
+                </div>
+            </form>
+        </div>
+        <div class="card">
+        </div>
+    </div>
+    <div  class="alert">
+        <p style="color: red;">Note: </p>
+        <p>The above information may not be always correct.</p>
+        <p>It is a response fetched from an third party API.</p>
+    </div>
+
+    <script src="Weather.js"></script>
+</body>
+</html>
